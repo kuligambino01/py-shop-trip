@@ -21,8 +21,8 @@ def shop_trip() -> None:
 
         for shop in shops:
             trip_cost = (
-                count_total_fuel_price(customer, shop, data)
-                + counting_shopping_price(customer, shop)
+                    count_total_fuel_price(customer, shop, data)
+                    + counting_shopping_price(customer, shop)
             )
             total[shop] = trip_cost
             print(

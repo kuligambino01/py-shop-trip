@@ -56,10 +56,10 @@ def shop_trip() -> None:
             if product_price.is_integer():
                 product_price = int(product_price)
 
-            print(f"{amount} {product}s for {product_price} dollars")
+            print(f"{amount} {product}s for {product_price:.2f} dollars")
 
         shopping_cost = counting_shopping_price(customer, cheapest_shop)
-        print(f"Total cost is {shopping_cost} dollars")
+        print(f"Total cost is {shopping_cost:.2f} dollars")
         print("See you again!")
         print()
 
